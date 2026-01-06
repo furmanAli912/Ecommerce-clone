@@ -1,0 +1,662 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 10%;
+    background-color: #E3E6F3;
+    width: 100%;
+    height:70px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    position:sticky;
+    /* margin-bottom: 10%; */
+    
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+
+
+}
+
+@media (max-width:450px) {
+    .list {
+        /* display: none; */
+    }
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-item a:hover {
+    text-decoration: solid underline;
+    font-size: 1.1rem;
+
+}
+
+.nav-item a:active {
+    text-decoration: underline;
+    color: rgb(7, 55, 128);
+}
+
+.acitve {
+    text-decoration: underline;
+}
+.mobile{
+    display: none;
+}
+
+
+/* hero section */
+.hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3E6F3;
+    width: 100%;
+    height: 80vh;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.text-hero {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    gap: 3%;
+    padding-left: 3%;
+}
+
+.text-hero button {
+    /* background-color: grey;
+    color: rgb(27, 4, 157);
+    font-weight: bold;
+    padding: 0.3em;
+    border-radius: 2rem; */
+    border: none;
+    background-color: #E3E6F3;
+    background-image: url('project images/button.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.text-hero button:hover {
+    font-weight: bold;
+    font-size: 1rem;
+    color: red;
+
+
+}
+
+.img-hero {}
+
+.hero-main img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+
+}
+
+/* Responsiveness of Heroo Section dk */
+@media (max-width:750px) {
+    .hero-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-main img {
+        /* position: absolute; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.firsth2 {
+    font-weight: bold;
+    color: rgb(11, 237, 135);
+    font-size: 3rem;
+}
+
+.secondh2 {
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+}
+
+/* style is end fo Hero section */
+/* style is end fo Hero section */
+#feature-section {
+    width: 100%;
+    height: 170px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 3%;
+    gap: 2%;
+
+}
+
+.f-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 14%;
+    height: 96%;
+    border-radius: 5%;
+    background-color: #f5eaeab7;
+    gap: ;
+    border-radius: 6%;
+}
+
+.f-box .boxImg {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5%;
+    border-radius: 6%;
+}
+
+/* Responsiveness of Feature Section */
+@media (max-width:500px) {
+    #feature-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f-box {
+        width: 100%;
+        gap: 5%
+    }
+}
+
+.container-fluid {
+    height: 200px;
+    background-color: red;
+    background-image: url('banner img/b2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+/* jhkjhkjhkjhk */
+.colll1 {
+    background-image: url('banner img/b4.jpg') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+}
+
+.colll1 img {
+    width: 100%;
+    height: 10%;
+    background-color: #da810d8d;
+}
+
+.colll2 {
+    background-image: url('banner img/b17.jpg') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    background-color: #d55c5cd6;
+}
+
+.img-last {
+    width: 100%;
+    height: 100%;
+}
+
+/* styleing newsletter */
+.exContainer {}
+
+.newsSection {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2;
+    height: 130px !important;
+    background-color: none !important;
+    background-color: rgba(3, 38, 154, 0.563);
+
+    padding: 2%;
+}
+
+/* Styling of Shoping Page */
+.shpHeroSctn {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+    flex-direction: column;
+    background-image: url('banner img/b1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shpHeroSctn h2 {
+    /* color: black; */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.shpHeroSctn p {
+    color: rgba(91, 11, 219, 0.999);
+}
+
+/* in shoe pagination section styling */
+.pagination {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+}
+
+.pagination p {
+    background-color: #1cd319;
+    margin: 0.3%;
+    padding: 0.4%;
+    border-radius: 8%;
+    color: white;
+
+}
+/*  blog  styling  starting from now*/
+.blgHeroSctn {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+    flex-direction: column;
+    background-image: url('banner img/b19.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blgHeroSctn h2 {
+    /* color: black; */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.blgHeroSctn p {
+    color: rgb(26, 28, 31);
+}
+
+/* Starting styling for blogging inside blog Change */
+.blgMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+    flex-wrap: wrap;
+    gap:0%;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+
+
+}
+.blg-1{
+    width: 45%;
+
+}
+.blg-1 img{
+    height: 35vh;
+    width: 70%;
+    border-radius: 3%;
+}
+.blg-2{
+    width: 45%;
+}
+.blgMain h1{
+position: absolute;
+}
+.blg-2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.blg-2 a:hover{
+    text-decoration:underline;
+    color: rgb(22, 200, 72);
+    font-weight: bold;
+}
+
+
+/*  Styling strarting of About Section  Now */
+
+.abtHeroSctn {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+    flex-direction: column;
+    background-image: url('about img/banner.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.abtHeroSctn h2 {
+    /* color: black; */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.abtHeroSctn p {
+    color: white;
+}
+.aboutusMain{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5%;
+    overflow: hidden;
+    padding: 2%;
+    color: black;
+    
+}
+.about-img{
+    width: 50%;
+    height: 100%;
+}
+.about-text{
+    width: 50%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+.about-text p{
+    text-wrap: wrap;
+    text-align: left;
+}
+.about-text marquee{
+    background-color: gray;
+    color: white ;
+    font-weight: bolder;
+}
+ /* styling of app setion in about page */
+ .app{
+
+ }
+ .appH{
+
+ }
+ .appH h1{
+    text-align: center;
+ }
+ .appH h1 a{
+    text-decoration: none;
+ }
+
+
+ /* <!--contact styling starting from now--> */
+ .contactMain{
+    width: 100%;
+    background-color: white;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    gap: 0%;
+    overflow: hidden;
+    padding: 2%;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.264);
+
+ }
+ .cntText{
+    width: 50%;
+    padding:1%;
+
+ }
+ .cntMap{
+    width: 50%;
+    padding: 5%;
+    border-radius: 3%;
+ }
+
+ .dvlper{
+    width: 100%;
+    background-color: white;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+ }
+
+/* form and developer styling start from now */
+.frmDv{
+    width: 98%;
+    background-color: white;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    padding: 3%;
+    border: 2px solid gray;
+    background-color: white;
+    margin: 1%;
+    border-radius: 2%;
+    /* overflow: hidden; */
+}
+.formMain{
+ flex-grow: 2;
+ width: 45%;
+}
+.dvlper{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+
+
+/* pdtDetial Styling strarting from Now */
+.mainPDtl {
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+
+.firstPDtl {}
+
+.dffMain {}
+
+/* Media Queries for all */
+@media(max-width:460px){
+    .blgMain{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: fit-content;
+    }
+    .blg-1 ,  .blg-2{
+        width: 100%;
+    }
+    .blg-1 img{
+        width: 100%;
+    }
+    /* about us page */
+    .aboutusMain{
+        flex-direction: column;
+    }
+    .about-img , .about-text{
+        width: 100%;
+    }
+    .contactMain{
+            display: flex;
+            flex-direction: column;       
+    }
+    .cntText {
+        width: 100%;
+        padding: 1%;
+    }
+    .cntMap{
+        width: 100%;
+        padding: 1%;
+    }
+    .frmDv {
+        flex-direction: column-reverse;
+        /* overflow: hidden; */
+    }
+    .dvlper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    .formMain {
+        width: 100%;
+    }
+
+/* navbar respinsivenesss */
+/* .mobile{
+    display: block;
+    font-size: 2rem;
+} */
+
+}
+@media (max-width:650px){
+    .header{
+     /* height:fit-content; */
+    }
+
+    .list{
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0%;
+        /* width: 300px; */
+        height: 500px;
+        width: 50%;
+        margin-left: auto;
+        background-color: wheat;
+        padding: none;
+
+
+    
+    
+    
+    }
+    .mobile{
+        display: block;
+        font-size: 2rem;
+    }
+
+    .text-hero {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        gap: 6%;
+        background-image: url('project images/hero\ image.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 5%;
+
+    }
+    .img-hero {
+        position: relative;
+    }
+    .img-hero img {
+        position: absolute;
+        top: 50%;
+        left: auto;
+        right: auto;
+        background-origin: auto;
+    }
+
+
+}
